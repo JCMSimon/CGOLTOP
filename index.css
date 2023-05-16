@@ -1,0 +1,84 @@
+body {
+	/* Remove scroll bars */
+	margin: 0;
+	/* Background */
+	background-image: url(res/Banner.gif);
+	background-size: cover;
+	backdrop-filter: blur(10px);
+	filter: grayscale();
+	min-height: 100vh;
+	min-width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.githubLink {
+	/* Prevent Selection (its ugly) */
+	user-select: none;
+	/* Make it almost invisible */
+	color: white;
+	opacity: 0.05;
+	/* Remove link styling */
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	/* Font Stuff */
+	font-size: 1vw 1vh;
+	/* Stick it to the bottom of the site with a slight distance */
+	position: fixed;
+	bottom: 1vh;
+}
+
+.githubLink:hover {
+	/* Make the link more visible when hovered */
+	opacity: 1;
+	/* Color of the Text */
+	color: rgba(255, 255, 255, 255);
+	background-clip: text;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	filter: hue-rotate(180deg);
+}
+
+.bannerImage {
+	padding-top: 5vh;
+	user-select: none;
+}
+
+.mainText {
+	font-family: monospace;
+	letter-spacing: 1px;
+	user-select: contain;
+	color: white;
+	font-size: 2.6vw;
+	cursor: default;
+	animation-name: appear;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-out;
+}
+
+mark {
+	transition: 0.5s;
+	border-radius: 10px;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+	background-color: red;
+}
+
+mark:hover {
+	background-color: white;
+}
+
+
+@keyframes appear {
+	from {
+		opacity: 0.1;
+		scale: 0.5;
+	}
+	to {
+		opacity: 1;
+		scale: 1;
+	}
+  }
