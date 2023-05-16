@@ -1,2 +1,1 @@
-# renko
 run renko run
