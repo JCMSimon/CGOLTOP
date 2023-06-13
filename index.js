@@ -27,4 +27,4 @@ function getPlayerData(username) {
 		text.innerHTML = "<mark>CGOL</mark> is <mark>" + diff.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") +  "</mark> pixel behind <mark>" + username + "</mark>"
 }})})}
 
-main("Klops")
+main("Renko")
